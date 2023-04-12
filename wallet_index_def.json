@@ -1,0 +1,558 @@
+{
+    "name": "wallet-index",
+    "fields": [
+        {
+            "name": "assetOptionId",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": true,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "legacyTripId",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "startDateString",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": true,
+            "sortable": true,
+            "analyzer": "keyword"
+        },
+        {
+            "name": "startDateTime",
+            "type": "Edm.DateTimeOffset",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "endDateString",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": true,
+            "sortable": true,
+            "analyzer": "keyword"
+        },
+        {
+            "name": "endDateTime",
+            "type": "Edm.DateTimeOffset",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "alternateAssetConsolidationName",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "estimatedValue",
+            "type": "Edm.Double",
+            "facetable": false,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "externalNavigationUrl",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "lengthOfStay",
+            "type": "Edm.Int64",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "sortable": true,
+            "searchable": false
+        },
+        {
+            "name": "isNew",
+            "type": "Edm.Int64",
+            "facetable": false,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "consolidatedAssetId",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "consolidatedAssetName",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "assetId",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "assetName",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "assetTypeName",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "regionId",
+            "type": "Edm.Int64",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "region",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "locationId",
+            "type": "Edm.Int64",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "location",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "propertyId",
+            "type": "Edm.Int64",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "property",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "resort",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "style",
+            "type": "Collection(Edm.String)",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "category",
+            "type": "Collection(Edm.String)",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "parentCategory",
+            "type": "Collection(Edm.String)",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "country",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "state",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "suggestedOccupancy",
+            "type": "Edm.Int64",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "maxOccupancy",
+            "type": "Edm.Int64",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "squareFootage",
+            "type": "Edm.Int64",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "bedroom",
+            "type": "Edm.Int64",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "bathroom",
+            "type": "Edm.Double",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "postalCode",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "assetAmenityList",
+            "type": "Collection(Edm.String)",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": true,
+            "sortable": false
+        },
+        {
+            "name": "showAssetValue",
+            "type": "Edm.Int64",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "contentUrl",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "heroImage",
+            "type": "Collection(Edm.String)",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "coverImage",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "geoLocation",
+            "type": "Edm.GeographyPoint",
+            "facetable": false,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "bonusTrip",
+            "type": "Collection(Edm.String)",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "passDays",
+            "type": "Edm.Int64",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "nextBookingDate",
+            "type": "Edm.DateTimeOffset",
+            "facetable": false,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "passListType",
+            "type": "Edm.String",
+            "facetable": false,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "recommendedValueRatio",
+            "type": "Edm.Double",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "passValueRatio",
+            "type": "Edm.Double",
+            "facetable": false,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "sortable": true,
+            "searchable": false
+        },
+        {
+            "name": "showPassValue",
+            "type": "Edm.Int64",
+            "facetable": false,
+            "filterable": false,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "showPassValueRoles",
+            "type": "Collection(Edm.String)",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "propertyContentUrl",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "assetContentUrl",
+            "type": "Edm.String",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "updateTime",
+            "type": "Edm.DateTimeOffset",
+            "facetable": false,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": true
+        },
+        {
+            "name": "tripTags",
+            "type": "Collection(Edm.String)",
+            "facetable": true,
+            "filterable": true,
+            "key": false,
+            "retrievable": true,
+            "searchable": false,
+            "sortable": false
+        },
+        {
+            "name": "productDetails",
+            "type": "Edm.ComplexType",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "Edm.String",
+                    "retrievable": true
+                },
+                {
+                    "name": "creditTotal",
+                    "type": "Edm.Double",
+                    "retrievable": true
+                },
+                {
+                    "name": "creditSubtotal",
+                    "type": "Edm.Double",
+                    "retrievable": true
+                },
+                {
+                    "name": "memberTotal",
+                    "type": "Edm.Double",
+                    "retrievable": true
+                },
+                {
+                    "name": "percentSavings",
+                    "type": "Edm.Double",
+                    "retrievable": true
+                }
+            ]
+        }
+    ]
+}
