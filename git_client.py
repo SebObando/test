@@ -45,25 +45,11 @@ def get_diff_between_last_two_merges():
         .stdout.decode("utf-8")
         .strip()
     )
-    # Get the commit hashes of the last commits before each merge
-    commit1 = (
-        subprocess.run(
-            ["git", "rev-list", f"{merge1}^1", "-n", "1"],
-            stdout=subprocess.PIPE,
-        )
-        .stdout.decode("utf-8")
-        .strip()
-    )
-    commit2 = (
-        subprocess.run(
-            ["git", "rev-list", f"{merge2}^1", "-n", "1"],
-            stdout=subprocess.PIPE,
-        )
-        .stdout.decode("utf-8")
-        .strip()
-    )
     # Get the diff between the two commits
     diff = subprocess.run(
-        ["git", "diff", "--name-only",commit1, commit2], stdout=subprocess.PIPE
+        ["git", "diff", "--name-only", f"{merge1}..{merge2}" ], stdout=subprocess.PIPE
     ).stdout.decode("utf-8")
     return diff
+
+
+print(get_diff_between_last_two_merges())

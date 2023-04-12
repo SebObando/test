@@ -17,3 +17,5 @@ def set_index_defintion_changed_variable(file_name: str) -> None:
         is_index_changed = "false"
     
     return is_index_changed
+
+print(set_index_defintion_changed_variable("wallet_index_def.json"))
