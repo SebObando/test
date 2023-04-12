@@ -10,8 +10,7 @@ def is_current_branch_main():
 
 
 def get_diff_between_last_two_merges():
-    # Get the commit hashes of the last two merges in the main branch
-    merge1 = (
+    last_merge = (
         subprocess.run(
             [
                 "git",
@@ -27,7 +26,7 @@ def get_diff_between_last_two_merges():
         .stdout.decode("utf-8")
         .strip()
     )
-    merge2 = (
+    penultimate_merge = (
         subprocess.run(
             [
                 "git",
@@ -45,11 +44,11 @@ def get_diff_between_last_two_merges():
         .stdout.decode("utf-8")
         .strip()
     )
-    # Get the diff between the two commits
-    diff = subprocess.run(
-        ["git", "diff", "--name-only", f"{merge1}..{merge2}" ], stdout=subprocess.PIPE
+    file_paths_differences = subprocess.run(
+        ["git", "diff", "--name-only", f"{last_merge}..{penultimate_merge}" ], stdout=subprocess.PIPE
     ).stdout.decode("utf-8")
-    return diff
+
+    return file_paths_differences
 
 
 print(get_diff_between_last_two_merges())
