@@ -67,6 +67,3 @@ def get_diff_between_last_two_merges():
         ["git", "diff", "--name-only",commit1, commit2], stdout=subprocess.PIPE
     ).stdout.decode("utf-8")
     return diff
-
-
-print(get_diff_between_last_two_merges())
