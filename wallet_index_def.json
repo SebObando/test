@@ -514,16 +514,6 @@
             "sortable": true
         },
         {
-            "name": "tripTags",
-            "type": "Collection(Edm.String)",
-            "facetable": true,
-            "filterable": true,
-            "key": false,
-            "retrievable": true,
-            "searchable": false,
-            "sortable": false
-        },
-        {
             "name": "productDetails",
             "type": "Edm.ComplexType",
             "fields": [
