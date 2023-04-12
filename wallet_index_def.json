@@ -2,16 +2,6 @@
     "name": "wallet-index",
     "fields": [
         {
-            "name": "assetOptionId",
-            "type": "Edm.String",
-            "facetable": true,
-            "filterable": true,
-            "key": true,
-            "retrievable": true,
-            "searchable": false,
-            "sortable": true
-        },
-        {
             "name": "legacyTripId",
             "type": "Edm.String",
             "facetable": false,
