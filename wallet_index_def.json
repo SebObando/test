@@ -504,16 +504,6 @@
             "sortable": false
         },
         {
-            "name": "updateTime",
-            "type": "Edm.DateTimeOffset",
-            "facetable": false,
-            "filterable": true,
-            "key": false,
-            "retrievable": true,
-            "searchable": false,
-            "sortable": true
-        },
-        {
             "name": "productDetails",
             "type": "Edm.ComplexType",
             "fields": [
